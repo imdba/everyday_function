@@ -3,6 +3,12 @@
 /*
  *  array_diff($arr1,$arr2,$arr3)
  *  所有的和第一个去比较 , 计算里面差值
+ *
+ *  获取两个数组的差异
+ *  $a = array_diff($arr1,$arr2);
+ *  $b = array_diff($arr2,$arr1);
+ *  array_merge($a,$b);
+ *
  * */
 
 $a1=array(0=>"Cat",1=>"Dog",2=>"Horse");
