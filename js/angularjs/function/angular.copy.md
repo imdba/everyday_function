@@ -20,7 +20,20 @@ angular.copy(source,[descination]);
 
 ## Example
 ```html
-<div ng-controller="ExampleController">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Example - example-example46-production</title>
+  
+
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+  
+
+  
+</head>
+<body ng-app="copyExample">
+  <div ng-controller="ExampleController">
 <form novalidate class="simple-form">
 Name: <input type="text" ng-model="user.name" /><br />
 E-mail: <input type="email" ng-model="user.email" /><br />
@@ -45,10 +58,13 @@ Gender: <input type="radio" ng-model="user.gender" value="male" />male
 
      $scope.reset = function() {
        // Example with 2 arguments
-       angular.copy($scope.master, $scope.user);
+		$scope.master = {};
+        angular.copy($scope.master, $scope.user);
      };
 
      $scope.reset();
    }]);
 </script>
+</body>
+</html>
 ```
