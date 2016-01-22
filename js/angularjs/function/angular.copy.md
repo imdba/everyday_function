@@ -16,8 +16,7 @@ angular.copy(source,[descination]);
 |param|type|Detail|
 |-----|----|------|
 |source|Object|The source that will be used to make a copy. Can be any type, including primitives, null, and undefined.|
-|destination
-(optional)|object/array|Destination into which the source is copied. If provided, must be of the same type as source.|
+|destination(optional)|object/array|Destination into which the source is copied. If provided, must be of the same type as source.|
 
 ## Example
 ```html
