@@ -24,4 +24,3 @@ angular.element(element);
 
 ## Returns
 Object - jquery object
-
