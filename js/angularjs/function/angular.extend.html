@@ -55,6 +55,18 @@
         function display(msg) {
             $("<p>").html(String(msg)).appendTo(document.body);
         }
+
+        var mySource = {'name' : 'sakshi', 'age' : '24', 'obj' :{'key':'value'}}
+        var myDest = {}
+        angular.copy(mySource, myDest);
+        console.log(myDest);
+
+        var mySource1 = {'name' : 'neha', 'age' : '26', obj2 : {}}
+        var mySource2 = {'course' : 'MCA'}
+        var myDest = {}
+        angular.extend(myDest, mySource1,mySource2)
+        console.log(myDest);
+
     })();
 </script>
 </body>

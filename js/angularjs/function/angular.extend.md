@@ -109,3 +109,21 @@ console.log(dst.baz === src.baz); // "true", it's a shallow copy, both
 ```
 
 [The diff for angular.copy and extend](http://www.tuicool.com/articles/En6Jve)
+```js
+//It creates a deep copy of source object or array and assign it to destination where ‘destination’ is optional. By writing deep copy, we mean that a new copy of the referred object is made. For example:
+var mySource = {'name' : 'sakshi', 'age' : '24', 'obj' :{'key':'value'}}
+var myDest = {}
+angular.copy(mySource, myDest);
+console.log(myDest);
+//{'name' : 'sakshi', 'age' : '24', 'obj' :{'key':'value'}}
+
+//angular.extend(destination, src1, src2 …) : It creates a shallow copy of one or more sources provided and assign them to destination. For example:
+var mySource1 = {'name' : 'neha', 'age' : '26', obj2 : {}}
+var mySource2 = {'course' : 'MCA'}
+var myDest = {}
+angular.extend(myDest, mySource1,mySource2)
+console.log(myDest);
+//{name: "neha", age: "26", course: "MCA", obj2: Object}
+
+//angular.copy() is slower than angular.extend()
+```
